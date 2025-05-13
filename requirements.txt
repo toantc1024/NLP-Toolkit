@@ -1,0 +1,16 @@
+# filepath: d:\MY_PROJECTS\NLP\DO_AN_CA_NHAN\requirements.txt
+streamlit>=1.26.0
+numpy>=1.24.0
+pandas>=2.0.0
+openpyxl>=3.1.0  # For Excel file support
+matplotlib>=3.7.0  # For visualization if needed
+seaborn>=0.12.0  # For advanced visualization
+scikit-learn>=1.3.0  # For data processing utilities
+st-on-hover-tabs>=1.0.0  # For the hover navigation component
+
+# NLP-related packages
+# Uncomment as needed
+# nltk>=3.8.1
+# spacy>=3.7.0
+# transformers>=4.30.0
+# gensim>=4.3.0
