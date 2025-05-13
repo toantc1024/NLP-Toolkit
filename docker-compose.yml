@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v2.3.1
+    container_name: qdrant
+    ports:
+      - "6333:6333"
+    environment:
+      - QDRANT__STORE_PATH=/qdrant/storage
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  streamlit:
+    build: .
+    container_name: streamlit-app
+    ports:
+      - "8501:8501"
+    depends_on:
+      - qdrant
+    env_file:
+      - .env
+
+volumes:
+  qdrant_data:
