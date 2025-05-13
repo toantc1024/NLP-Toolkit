@@ -19,11 +19,8 @@ class UniqueLabel(BaseModel):
     label: str
     description: str
     
-class LLMLabelClassiferOutput(BaseModel):
-    labe: str = Field(description="The label predicted")
-    
-class LLMLabelClassiferOutput(BaseModel):
-    label: str
+class LLMLabelClassifierOutput(BaseModel):
+    label: str = Field(description="The label predicted")
     
 
 class DataEnhanceType(Enum):
